@@ -1,3 +1,177 @@
-h1 {
-    color: purple
+/*
+@import url(_reset.css);
+@import url(_variaveis.css);
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+body {
+    background-color: lightgrey;
+    color: #4D4D4D;
+    font-family: 'Pacifico', 'cursive';
+}
+.cabecalho{
+    height: 80px;
+    background-color: #fff;
+    margin-bottom: 3rem;
+}
+
+/* componentes */
+.card{
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px darkgray;
+    width: 100%;
+    max-width: 45rem;
+    padding: 1.75rem;
+    margin-bottom: 1rem;
+    margin: 0 auto;
+}
+.container{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.linha {
+    position: absolute;
+    bottom: 0;
+    background-color: darkgrey;
+    width: 100%;
+    height: 1px;
+}
+.botao{
+    width: 48%;
+    height: 40px;
+    border: solid 2px #FF1493;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #FF1493;
+}
+.botao:hover{
+    background-color: #FF69B4;
+    color: #fff;
+}
+.botao:active{
+    background-color: #FF1493;
+    color: #fff;
+}
+.seta{
+    background-image: url(../assets/arrow_left_purple.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    border: solid 2px #FF1493;
+    cursor: pointer;
+}
+.seta:hover{
+    background-color: #FF69B4;
+    background-image: url(../assets/arrow_left_white.png);    
+}
+.seta:active{
+    background-color: #FF1493;
+    background-image: url(../assets/arrow_left_white.png);    
+}
+
+/*fim componentes*/
+.avaliacao{
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+/*Titulo*/
+.title-lacamento-notas {
+    margin-bottom: 2rem;
+}
+.linha-title{
+    position: absolute;
+    background-color: darkgrey;
+    width: 100%;
+    height: 1px;
+    bottom: -2rem;
+}
+.logo-gato {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 18%;
+}
+.logo-gato img {
+    width: 50px;
+    border-radius: 30px;
+}
+/*FIM Titulo*/
+
+/* texto e checkBox das patas*/
+.text-patas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-avaliacao{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-checkbox{
+    position: relative;
+    width: 45px;
+    height: 42px;
+}
+.container-checkbox input{
+    position: absolute;
+    opacity: 0;
+}
+.check{
+    background: url(../assets/pata-nao-pintada.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 41px;
+    height: 39px;
+    cursor: pointer;
+}
+.container-checkbox input:checked ~.check{
+    background: url(../assets/pata-pintada.png) no-repeat;
+    background-size: 100%;
+}
+/* FIM texto e checkBox das patas*/
+
+
+
+/* Responsivo
+
+@media(min-width: 800px) {
+    .container {
+        padding-right: 2.5rem;
+        padding-left: 2.5rem;
+    }
+}
+
+@media(min-width: 1200px) {
+    .container {
+        padding-left: calc((100vw - 900px)/2);
+        padding-right: calc((100vw - 900px)/2);
+    }
+}
+
+
+
+@media(min-width: 800px) {
+    .cadastro-cabecalho__logo {
+        width: 5.75rem;
+        margin-bottom: 1rem;
+    }
+    
+    .cadastro-cabecalho__titulo {
+        margin-bottom: 2rem;
+    }
+}
+*/
