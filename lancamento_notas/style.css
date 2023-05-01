@@ -12,6 +12,13 @@ body {
     color: #000000;
     font-family: 'Montserrat', sans-serif;
 }
+a{
+    text-decoration: none;
+    color: #EB339B;
+}
+a:hover{
+    color: #fff;
+}
 .cabecalho{
     display: flex;
     justify-content: space-around;
@@ -32,8 +39,12 @@ body {
     width: 170px;
 }
 
-.cabecalho label{
+.cabecalho a label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 8px;
+    width: 170px;
 }
 
 
