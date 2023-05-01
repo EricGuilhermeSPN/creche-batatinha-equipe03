@@ -66,7 +66,6 @@ document.addEventListener('click', function (e) {
     const nomeClasse = e.target.classList[0] //peguei a primeira classe da lista pelo click do mouse
 
     const patas = document.querySelectorAll(`.patas${nomeClasse} li`)
-    console.log(patas)
 
     patas.forEach((element,indice1)=>{
         element.addEventListener('click',()=>{
@@ -75,5 +74,5 @@ document.addEventListener('click', function (e) {
             })
         })
     })
-
+    console.log(e.target.getAttribute('data-avaliacao')) // avaliação p/ banco de dados
 })
