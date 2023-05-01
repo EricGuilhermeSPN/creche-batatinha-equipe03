@@ -13,10 +13,31 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 .cabecalho{
-    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1440px;
+    height: 84px;
     background-color: #fff;
-    margin-bottom: 3rem;
+    margin-bottom: 64px;
 }
+.cabecalho div, .cabecalho figure{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    width: 373px;
+    height: 46px;
+}
+.cabecalho figure{
+    width: 170px;
+}
+
+.cabecalho label{
+    padding: 8px;
+}
+
+
+
 
 /* componentes */
 .card{
